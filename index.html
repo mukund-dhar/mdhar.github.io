@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="index.css">
     <title>Mukund Dhar - Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__text">
-            <h1 class="heading-primary">Mukund Dhar</h1>
-            <p>Senior Software Engineer | A Machine Learning and Data Science Enthusiast</p>
-        </div>
-    </header>
+    <!-- ***** Header ***** -->
 
-    <nav class="nav">
-        <ul class="nav__items">
+    <header class="header" role="banner" id="top">
+        <div class="row">
+            <ul class="nav__items">
             <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
             <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
             <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
@@ -23,6 +20,19 @@
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
     </nav>
+        </div>
+        <div class="header__text-box row">
+            <div class="header__text">
+                <h1 class="heading-primary">
+                    <span>Mukund Dhar</span>
+                </h1>
+                <p>Senior Software Engineer | A Machine Learning and Data Science Enthusiast</p>
+                <a href="#contact" class="btn btn--pink">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
 
     <section id="work">
         <h2 class="heading-secondary">Work Experience</h2>
@@ -94,6 +104,7 @@
             </ul>
         </div>
     </section>
+        </main>
 
     <section id="contact">
         <h2 class="heading-secondary">Contact</h2>
@@ -101,10 +112,32 @@
         <p>Mobile: +1 (689) 250-9530</p>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 Mukund Dhar. All rights reserved.</p>
+    <footer  role="contentinfo" class="footer">
+        
+	<div class="row">
+	<p>&copy; 2024 Mukund Dhar. All rights reserved.</p>
+            <!-- Update the links to point to your accounts -->
+            <ul class="footer__social-links">
+
+                <li class="footer__social-link-item">
+                    <a href="https://github.com/mukund-dhar/" title="Link to Github Profile">
+                        <img src="./images/github.svg" class="footer__social-image" alt="Github">
+                    </a>
+                </li>
+                <li class="footer__social-link-item">
+                    <a href="https://linkedin.com/in/mukund-dhar/" title="Link to LinkedIn Profile">
+                        <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
     </footer>
 
-    <script src="script.js"></script>
+    <a href="#top" class="back-to-top" title="Back to Top">
+        <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="./index.js"></script>
 </body>
 </html>
